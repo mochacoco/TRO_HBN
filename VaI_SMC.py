@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[9]:
-
+# VaI with SMC implementation
 
 import numpy as np
 import tensorflow as tf
