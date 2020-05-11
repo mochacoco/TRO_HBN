@@ -1,4 +1,4 @@
-# GPR with EKF implementation
+% GPR with EKF implementation
 
 clear all;
 close all;
