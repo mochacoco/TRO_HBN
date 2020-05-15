@@ -8,8 +8,6 @@ load('data_modified.mat');
 A = data(1:6830,1:4);
 B = data(1:6830,5:8);
 C = data(1:4400,9:11);
-B(:,3:4) = B(:,3:4).*10000;
-C(:,3) = C(:,3).*10000;
 
 gprD = fitrgp(A(:,1:3),A(:,4),'Kernelfunction','ardsquaredexponential','OptimizeHyperparameters', 'sigma', 'sigma', std(A(1:20,4)), ...
     'HyperparameterOptimizationOptions', struct('AcquisitionFunctionName','expected-improvement-plus',...
